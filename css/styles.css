@@ -1,7 +1,8 @@
 /* FONTS */
 body {
   font-family: 'Titillium Web', sans-serif !important;
-  font-size: 10px;
+  font-size: 18px;
+  background-color: #eeeeee !important;
 }
 
 /* Forms */
@@ -41,35 +42,35 @@ label.active {
 
 /* Color Pallete */
 .dev_dark_bg {
-  background-color: #222831;
+  background-color: #222831 !important;
 }
 
 .dev_dark_text {
-  color: #222831;
+  color: #222831 !important;
 }
 
 .dev_grey_bg {
-  background-color: #393e46;
+  background-color: #393e46 !important;
 }
 
 .dev_grey_text {
-  color: #393e46;
+  color: #393e46 !important;
 }
 
 .dev_sky_bg {
-  background-color: #00adb5;
+  background-color: #00adb5 !important;
 }
 
 .dev_sky_text {
-  color: #00adb5;
+  color: #00adb5 !important;
 }
 
 .dev_light_bg {
-  background-color: #eeeeee;
+  background-color: #eeeeee !important;
 }
 
 .dev_light_text {
-  color: #eeeeee;
+  color: #eeeeee !important;
 }
 
 

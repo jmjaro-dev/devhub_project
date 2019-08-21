@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/styles.css" />
+  <!-- Import Font awesome -->
+  <script src="https://kit.fontawesome.com/9a2653ad02.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>< Dev_Hub | Profile></title>
+</head>
+<body>
+  <!--? Nav -->
+  <nav class="dev_grey_bg">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">< Dev_Hub ></a>
+        <a href="#" class="button-collapse hide-on-large" data-activates="mobile-nav">
+          <i class="material-icons left">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="profile.html">
+              <div class="chip transparent white-text">
+                <img src="img/profilepic.jpg"> John Doe
+              </div>
+            </a>
+          </li>
+          <li >
+            <a href="home.html">
+              <div class="chip transparent white-text">
+                  Home
+              </div>
+            </a>
+          </li>
+          <li class="active">
+            <a href="profile.html">
+              <div class="chip transparent white-text">
+                  Profile
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="dropdown-button" data-activates="my-dropdown">
+              <i class="material-icons">arrow_drop_down</i>
+            </a>
+          </li>
+        </ul>
+        <!-- DROPDOWN MENU -->
+        <ul id="my-dropdown" class="dropdown-content dev_light_bg" style="width: 150px;">
+          <li>
+            <a href="#" style="font-size: 0.86rem;" class="dev_dark_text">
+              <i class="material-icons prefix" style="font-size: 0.8rem;">settings</i>Settings
+            </a>
+          </li>
+          <li>
+            <a href="#" style="font-size: 0.86rem;" class="dev_dark_text">
+              <i class="fas fa-sign-out-alt" style="font-size: 0.86rem;"></i> 
+              Log out
+            </a>
+          </li>
+        </ul>
+        <!-- MOBILE NAV -->
+        <ul class="side-nav" id="mobile-nav">
+          <li>
+            <div class="user-view">
+              <div class="background"><img src="img/coverphoto.jpg">
+              </div>
+              <a href="#">
+                <img src="img/profilepic.jpg" class="circle">
+              </a>
+
+              <a href="">
+                <span class="name white-text">John Doe</span>
+              </a>
+              <a href="">
+                <span class="email white-text">johndoe@gmail.com</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="index.html">
+              <i class="material-icons">home</i> Home
+            </a>
+          </li>
+          <li>
+            <a href="posts.html">
+              <i class="material-icons">person</i>
+              Profile
+            </a>
+          </li>
+          <li>
+            <a href="categories.html">
+              <i class="material-icons">settings</i>
+              Settings
+            </a>
+          </li>
+          <li class="subheader"> <a class="divider"></a></li>
+          <li>
+            <a href="" class="waves-effect">
+              <i class="material-icons">settings</i>
+              Log Out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END Nav -->
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // INIT
+
+      // Dropdown INIT
+      $('.dropdown-button').dropdown({
+        constrainWidth: false,
+        belowOrigin: true,
+        alignment: 'left'
+      });
+
+      // SideNav INIT
+      $('.button-collapse').sideNav();
+    
+    });
+  </script>
+</body>
+</html>
