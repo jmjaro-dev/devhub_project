@@ -3,22 +3,61 @@
 <head>
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <link type="text/css" rel="stylesheet" href="css/styles.css" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>< Dev_Hub ></title>
 </head>
 <body>
-  
+  <!--? Nav -->
+  <nav class="dev_grey_bg">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">< Dev_Hub ></a>
+        <a href="#" class="button-collapse hide-on-large" data-activates="mobile-nav">
+          <i class="material-icons left">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <div class="input-field">
+              <input class="validate" id="email" type="email" placeholder="" validate>
+              <label for="email">Email</label>
+            </div>
+          </li>
+          <li>
+            <div class="input-field">
+              <input id="password" type="password" placeholder="" >
+              <label for="password">Password</label>
+            </div>
+          </li> 
+          <!-- BUTTON LINK -->
+          <li>
+            <btn type="submit" id="submit" class="btn waves-effect waves-light dev_sky_bg z-depth-2">Login</btn>
+          </li>
+        </ul>
+
+        <!-- MOBILE NAV -->
+        <ul class="side-nav dev_grey_bg" id="mobile-nav">
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END Nav -->
+
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
     $(document).ready(function() {
       // INIT
+
+      // SideNav init
+      $('.button-collapse').sideNav();
     
     });
   </script>

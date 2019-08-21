@@ -1,0 +1,75 @@
+/* FONTS */
+body {
+  font-family: 'Titillium Web', sans-serif !important;
+  font-size: 10px;
+}
+
+/* Forms */
+.input-field {
+  padding-top: 10px;
+}
+
+input[type-text] {
+  border-radius: 50%;
+}
+input#email.validate {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+
+input#password {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+.input-field>label {
+  padding-top: 5px;
+}
+
+label.active {
+  color: #fff !important;
+}
+
+#email {
+  width: 90%;
+  height: 22px;
+}
+
+#password {
+  width: 90%;
+  height: 22px;
+}
+
+/* Color Pallete */
+.dev_dark_bg {
+  background-color: #222831;
+}
+
+.dev_dark_text {
+  color: #222831;
+}
+
+.dev_grey_bg {
+  background-color: #393e46;
+}
+
+.dev_grey_text {
+  color: #393e46;
+}
+
+.dev_sky_bg {
+  background-color: #00adb5;
+}
+
+.dev_sky_text {
+  color: #00adb5;
+}
+
+.dev_light_bg {
+  background-color: #eeeeee;
+}
+
+.dev_light_text {
+  color: #eeeeee;
+}
+
+
