@@ -6443,3 +6443,247 @@ input[type=range]::-ms-thumb {
     bottom: auto;
     text-align: center;
     margin-top: 1.2rem; } }
+/* FONTS */
+body {
+  font-family: 'Titillium Web', sans-serif !important;
+  font-size: 18px; }
+
+h2 {
+  padding: 0 !important;
+  margin: 0 !important; }
+
+/* Color Pallete */
+.dev-dark-bg {
+  background-color: #222831 !important; }
+
+.dev-grey-bg {
+  background-color: #393e46 !important; }
+
+.dev-sky-bg {
+  background-color: #00adb5 !important; }
+
+.dev-light-bg {
+  background-color: #eeeeee !important; }
+
+.dev-dark-text {
+  color: #222831 !important; }
+
+.dev-grey-text {
+  color: #393e46 !important; }
+
+.dev-sky-text {
+  color: #00adb5 !important; }
+
+.dev-light-text {
+  color: #eeeeee; }
+
+.dev-gradient {
+  background: #222831;
+  background: -moz-linear-gradient(90deg, #222831 20%, #00adb5 82%);
+  background: -webkit-linear-gradient(90deg, #222831 20%, #00adb5 82%);
+  background: linear-gradient(90deg, #222831 20%, #00adb5 82%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#222831",endColorstr="#00adb5",GradientType=1); }
+
+.dev-gradient-loader {
+  border: #222831;
+  border: -moz-linear-gradient(90deg, #222831 23%, #00adb5 64%);
+  border: -webkit-linear-gradient(90deg, #222831 23%, #00adb5 64%);
+  border: linear-gradient(90deg, #222831 23%, #00adb5 64%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#222831",endColorstr="#00adb5",GradientType=1); }
+
+/* FORMS */
+.input-field {
+  padding-top: 10px; }
+
+input[type-text] {
+  border-radius: 50%; }
+
+input#email.validate {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black; }
+
+input#password {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black; }
+
+.input-field > label {
+  padding-top: 5px; }
+
+label.active {
+  color: #fff !important; }
+
+#email {
+  width: 90%;
+  height: 22px; }
+
+#password {
+  width: 90%;
+  height: 22px; }
+
+textarea#post {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black; }
+
+#basic-info .input-field,
+input[type=text],
+input[type=email] {
+  width: 300px; }
+
+/* List */
+li.active {
+  background-color: #00adb5 !important;
+  color: #fff; }
+
+/* PROFILE PAGE CSS */
+#profile {
+  position: relative; }
+
+.profile-pic {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  width: 4em;
+  height: 4em;
+  border: #fff 4px solid; }
+
+#profile-pic {
+  position: absolute;
+  top: 35px;
+  right: 22px; }
+
+#profile-pic-text {
+  position: absolute;
+  top: 10px;
+  right: 45px;
+  font-size: 0.8em; }
+
+img#profile-pic {
+  width: 7em;
+  height: 7em;
+  border: #fff 4px solid;
+  z-index: 1; }
+
+.cover-photo {
+  background-position: center;
+  width: 100%;
+  max-height: 300px; }
+
+#profile-cover > .card-content {
+  padding: 10px; }
+
+#user-email {
+  color: #222831;
+  font-size: 0.9em;
+  font-weight: bold; }
+
+#user-github {
+  font-size: 0.8em;
+  font-weight: bold; }
+
+/* TABS */
+.tab {
+  border-bottom: 1px solid #ccc; }
+
+.tab a {
+  color: #222831 !important; }
+
+.tab .active {
+  background-color: transparent !important;
+  color: #000 !important; }
+
+.tab {
+  color: #fff !important; }
+
+.tabs .indicator {
+  background-color: #00adb5 !important;
+  height: 3px; }
+
+.section {
+  opacity: 0; }
+
+#logo {
+  width: 3em;
+  height: 1em; }
+
+#footer-logo {
+  width: 4em;
+  height: 1.5em;
+  margin-right: 10px; }
+
+.loader {
+  position: absolute;
+  top: 40%;
+  left: 47%; }
+
+#preloader-logo {
+  position: absolute;
+  top: -30%;
+  left: -30%;
+  width: 8.5em;
+  height: 3em; }
+
+svg {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  display: inline-block; }
+
+.git-title {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  width: 100%; }
+
+.git-desc {
+  padding-top: 5px;
+  margin-top: 0;
+  font-size: 0.9rem;
+  width: 100%; }
+
+.git-details {
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+  vertical-align: top;
+  width: 100%; }
+
+.git-lang {
+  padding: 0;
+  margin-right: 20px;
+  font-size: 0.9rem; }
+
+.git-fork {
+  padding: 0;
+  margin-right: 20px;
+  font-size: 0.9rem; }
+
+.git-time {
+  padding: 0;
+  margin-right: 20px;
+  font-size: 0.9rem; }
+
+.html-circle {
+  color: #e65100;
+  background-color: #e65100;
+  margin-right: 5px;
+  font-size: 1rem; }
+
+.css-circle {
+  color: #1a237e;
+  background-color: #1a237e;
+  margin-right: 5px;
+  font-size: 1rem; }
+
+.js-circle {
+  color: #ffee58;
+  background-color: #ffee58;
+  margin-right: 5px;
+  font-size: 1rem; }
+
+.footer-copyright {
+  font-size: 1rem; }
+
+ul.collapsible > li.active {
+  background: #222831; }
+
+a:hover {
+  color: #00adb5 !important; }
