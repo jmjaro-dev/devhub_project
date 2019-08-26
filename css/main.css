@@ -6452,7 +6452,8 @@ nav {
   background: url("../img/bg js.png") !important;
   background-position: center;
   background-size: cover;
-  opacity: 0.9; }
+  opacity: 0.9;
+  z-index: 2; }
 
 h2 {
   padding: 0 !important;
@@ -6737,3 +6738,6 @@ body.dark table tbody > tr:nth-child(odd) > th {
 
 #sign-up-form {
   font-size: 1rem; }
+
+#row1, #row2, #row3, #row4, #row5 {
+  opacity: 0 !important; }
