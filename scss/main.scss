@@ -1,0 +1,19 @@
+@import './materialize.scss';
+
+// Vars
+
+// Text Color Function
+@function set-text-color($color) {
+    @if(lightness($color) > 50){
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+
+
+
+// Nav
+nav {
+    background: url("../img/bg\ js.png");
+}

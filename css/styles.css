@@ -74,4 +74,6 @@ label.active {
   color: #eeeeee !important;
 }
 
-
+nav {
+  background: url("../img/bg\ js.png");
+}
