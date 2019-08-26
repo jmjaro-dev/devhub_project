@@ -6448,6 +6448,12 @@ body {
   font-family: 'Titillium Web', sans-serif !important;
   font-size: 18px; }
 
+nav {
+  background: url("../img/bg js.png") !important;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9; }
+
 h2 {
   padding: 0 !important;
   margin: 0 !important; }
@@ -6685,5 +6691,49 @@ svg {
 ul.collapsible > li.active {
   background: #222831; }
 
-a:hover {
-  color: #00adb5 !important; }
+#night_mode {
+  position: absolute;
+  top: 0;
+  right: -9%; }
+
+body.dark {
+  background-color: #1e2227;
+  color: #fff; }
+
+body.dark code[class*=language-],
+body.dark table tbody > tr:nth-child(odd) > td,
+body.dark table tbody > tr:nth-child(odd) > th {
+  background: #282c34; }
+
+.user-name {
+  font-weight: bold;
+  color: #00adb5; }
+
+.date-time {
+  font-size: 0.9rem;
+  color: #393e46; }
+
+.post-content {
+  padding: 10px; }
+
+#sign-up-wrapper {
+  margin-top: 25px !important;
+  margin-bottom: 25px !important;
+  padding: 20px;
+  border: 1px solid #222831;
+  width: 350px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 25px;
+  color: #222831; }
+
+#sign-up-wrapper label {
+  font-size: 1rem;
+  color: #222831; }
+
+#login {
+  font-size: 0.8rem;
+  height: 35px; }
+
+#sign-up-form {
+  font-size: 1rem; }

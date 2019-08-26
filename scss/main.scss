@@ -6,6 +6,14 @@ body {
     font-size: 18px;
 }
 
+nav {
+    background: url('../img/bg\ js.png') !important;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    z-index: 2;
+}
+
 // UTILITIES
 h2 {
     padding: 0 !important;
@@ -311,10 +319,70 @@ svg{
 ul.collapsible > li.active {
     background: $dev-dark;
 }
+// NIGHT MODE 
+#night_mode {
+    position: absolute;
+    top:0;
+    right: -9%;
+}
 
-a:hover {
-    color: $dev-sky !important;
+body.dark {
+    background-color: rgb(30,34,39);
+    color: #fff;
+}
+body.dark code[class*=language-],
+body.dark table tbody>tr:nth-child(odd)>td,
+body.dark table tbody>tr:nth-child(odd)>th {    
+    background: #282c34
+}
+
+// HOME PAGE 
+.user-name {
+    font-weight: bold;
+    color: $dev-sky;
+}
+
+.date-time {
+    font-size: 0.9rem;
+    color: $dev-grey;
+}
+
+.post-content {
+    padding: 10px;
+}
+
+// INDEX HTML 
+
+#sign-up-wrapper {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+    padding: 20px;
+    border: 1px solid $dev-dark;
+    width: 350px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 25px;
+    color: $dev-dark;
+}
+
+#sign-up-wrapper label {
+    font-size: 1rem;
+    color: $dev-dark;
+}
+
+#login {
+    font-size: 0.8rem;
+    height: 35px;
+}
+#sign-up-form {
+    font-size: 1rem;
 }
 
 
+// HOME ROW OPACITY
 
+#row1, #row2, #row3, #row4, #row5 {
+    opacity: 0 !important;
+}
+
+// SETTINGS

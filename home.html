@@ -1,32 +1,634 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
-    <!-- Import Font awesome -->
-    <script src="https://kit.fontawesome.com/9a2653ad02.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>< Dev_Hub > | Home</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <!-- Import Font awesome -->
+  <script src="https://kit.fontawesome.com/9a2653ad02.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dev_Hub | Home</title>
 </head>
 <body>
-    
+  <!--? Nav -->
+  <header class="main-header">
+    <div class="navbar-fixed">
+      <nav class="dev-dark-bg">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="home.html" class="brand-logo">
+              <img src="img/dev_hub_logo_white.png" id="logo" class="responsive-img">
+            </a>
+            <a href="#" class="button-collapse hide-on-large-only" data-activates="side-nav">
+              <i class="material-icons left">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a href="home.html">
+                  <div class="chip transparent white-text">
+                    <img src="img/profilepic.jpg"> John Doe
+                  </div>
+                </a>
+              </li>
+              <li class="active">
+                <a href="home.html">
+                  <div class="chip transparent white-text">
+                      Home
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="hub.html">
+                  <div class="chip transparent white-text">
+                      Hub
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="settings.html">
+                  <div class="chip transparent white-text">
+                      Settings
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="dropdown-button" data-activates="my-dropdown">
+                  <i class="material-icons">arrow_drop_down</i>
+                </a>
+              </li>
+            </ul>
+            <!-- DROPDOWN MENU -->
+            <ul id="my-dropdown" class="dropdown-content dev-light-bg" style="width: 150px;">
+              <li>
+                <a href="index.html" style="font-size: 0.86rem;" class="dev-dark-text">
+                  <i class="fas fa-sign-out-alt" style="font-size: 0.86rem;"></i> 
+                  Log out
+                </a>
+              </li>
+            </ul>
+            <!-- SIDE NAV -->
+            <ul class="sidenav white" id="side-nav">
+              <li>
+                <div class="user-view">
+                  <div class="background responsive-img"><img src="img/coverphoto.jpg">
+                  </div>
+                  <a href="home.html">
+                    <img src="img/profilepic.jpg" class="circle">
+                  </a>
+
+                  <a href="home.html">
+                    <span class="name white-text">John Doe</span>
+                  </a>
+                  <a href="#">
+                    <span class="email white-text">johndoe@gmail.com</span>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <a href="home.html" class="dev-dark-text">
+                  <i class="material-icons dev-grey-text">home</i> Home
+                </a>
+              </li>
+              <li>
+                <a href="hub.html" class="dev-dark-text">
+                  <i class="material-icons dev-grey-text">device_hub</i>
+                  Hub
+                </a>
+              </li>
+              <li>
+                <a href="settings.html" class="dev-dark-text">
+                  <i class="material-icons dev-grey-text">settings</i>
+                  Settings
+                </a>
+              </li>
+              <li class="subheader"> <a class="divider"></a></li>
+              <li>
+                <a href="#" class="dev-dark-text">
+                  <i class="fas fa-sign-out-alt dev-grey-text" style="font-size: 1.5em;"></i> 
+                  Log out
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- END Nav -->
+
+  <!-- START CONTAINER -->
+  <div class="container">
+    <section class="section" id="posts">
+        <div class="row" id="row1">
+          <div class="col s12">
+            <!-- SIMPLE CARD WITHOUT TITLE -->
+            <div class="card">
+              <div class="card-content">
+                <div class="row">
+                  <div class="col s2 center">
+                    <img src="img/person2.jpg" height="100px" width="100px" style="border: 4px solid #fff;" class="z-depth-2 circle" >
+                  </div>
+                  <!-- POST FOR -->
+                  <form id="write-post">
+                    <div class="col s6 offset-s1">
+                      <div class="input-field">
+                        <i class="material-icons active"></i>
+                        <input id="What's on your mind?" type="text" data-length="30">
+                        <label for="what's on your mind?">What's on your mind?</label>
+                      </div>
+                    </div>
+                    <div class="col s2 offset-s1">
+                      <div class="input-field">
+                        <input type="submit" id="send_post" value="Post" class="btn dev-grey-bg">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+<!-- CArd Image -->
+
+  <!-- POSTS START -->
+  <section class="section" id="row2">
+    <div class="row" >
+      <div class="col s12 l6">
+        <div class="card">
+          <div class="card-content">
+            <div class="collection">
+              <div class="collection-item avatar">
+                <img src="img/person1.jpg" class="circle">
+                <a href="#!" class="user-name">John Doe</a><br>
+                <span class="date-time">August 24 @ 10:00 am</span>
+              </div>
+              <div>
+                <p class="post-content">
+                    Working on my new project.
+                </p>
+                <br>
+                <img src="img/access-blur-close-up-1181271.jpg" class="materialboxed responsive-img">
+              </div>
+            </div>
+          </div>
+          <div class="card-action">
+            <a href="#" class="btn grey star star"><i class="material-icons" style="vertical-align: bottom;">star</i> star</a>
+            <a href="#" class="btn green unfollow"><i class="material-icons" style="vertical-align: bottom;">remove</i> unfollow</a>
+          </div>
+        </div>
+      </div>  
+      <!-- END POST -->
+      <!-- POST START -->
+      <div class="col s12 l6">
+        <div class="card">
+          <div class="card-content">
+            <ul class="collection">
+              <li class="collection-item avatar">
+                <img src="img/person3.jpg" class="circle">
+                <a href="#!" class="user-name">Standford Lee</a> <br>
+                <span class="date-time">August 22 @ 12:30 pm</span>
+              </li>
+              <li>
+                <p class="post-content">Be one of us! </p><br>
+                <img src="img/apple-businesswoman-coding-7375.jpg" class="materialboxed responsive-img" width="100%">
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <a href="#" class="btn grey star"><i class="material-icons" style="vertical-align: bottom;">star</i> star</a>
+            <a href="#" class="btn green unfollow"><i class="material-icons" style="vertical-align: bottom;">remove</i> unfollow</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- END POST -->
+  <section class="section" id="row3">
+    <div class="row" >
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <div class="collection">
+              <div class="collection-item avatar">
+                <img src="img/person4.jpg" class="circle">
+                <a href="#!" class="user-name">Christoff Smith</a> <br>
+                <span class="date-time">August 22 @ 6:32 pm</span>
+              </div>
+              <div>
+                <p class="post-content"> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio aperiam officia quaerat deserunt earum.  <br>
+                </p>
+                <br>
+
+                <div class="row">
+                  <div class="col s12 l6">
+                    <img src="img/adult-app-developer-coding-1181244.jpg" class="materialboxed responsive-img">
+                  </div>
+                
+                  <div class="col s12 l6">
+                    <img src="img/adult-code-coder-340152.jpg" class="materialboxed responsive-img">
+                  </div>
+                </div>
+                <div class="row ">
+                  <div class="col s12 l4">
+                    <img src="img/apple-businesswoman-coding-7375.jpg" class="materialboxed responsive-img">
+                  </div>
+                
+                  <div class="col s12 l4">
+                    <img src="img/apple-black-and-white-black-and-white-169573.jpg" class="materialboxed responsive-img">
+                  </div>
+                
+                  <div class="col s12 l4">
+                      <img src="img/apple-blogging-coder-36990.jpg" class="materialboxed responsive-img">
+                  </div>
+                </div>
+              </div>
+              <div class="card-action">
+                  <a href="#" class="btn grey star"><i class="material-icons" style="vertical-align: bottom;">star</i> star</a>
+                  <a href="#" class="btn green unfollow"><i class="material-icons" style="vertical-align: bottom;">remove</i> unfollow</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- POST START -->
+  <section class="section" id="row4">
+    <div class="row" >
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <div class="collection">
+              <div class="collection-item avatar">
+                <img src="img/person1.jpg" class="circle">
+                <a href="#" class="user-name">John Doe</a> <br>
+                <span class="date-time">August 21 @ 1:10 am</span>
+              </div>
+              <div>
+                <p class="post-content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, modi.
+                </p>
+                <br>
+                <img src="img/background-code-coder-177598.jpg" class="materialboxed responsive-img">
+              </div>
+            </div>
+          </div>
+          <div class="card-action responsive-text">
+            <a href="#" class="btn grey star"><i class="material-icons" style="vertical-align: bottom;">star</i> star</a>
+            <a href="#" class="btn green unfollow"><i class="material-icons" style="vertical-align: bottom;">remove</i> unfollow</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- END POST -->
+  <section class="section" id="row5">
+    <div class="row" >
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <div class="collection">
+              <div  class="collection-item avatar">
+                <img src="img/person1.jpg" class="circle">
+                <a href="#" class="user-name">Smith Curtis</a> <br>
+                <span class="date-time">August 19</span>
+              </div>
+              <div>
+                <p class="post-content">
+                    Being a developer is not easy. Be Proud. 
+                </p> 
+              </div>
+                  <div class="row">
+                    <div class="col s12 l6">
+                        <img src="img/person2.jpg" class="materialboxed responsive-img">
+                    </div>
+                  
+                    <div class="col s12 l6">
+                        <img src="img/person1.jpg" class="materialboxed responsive-img">
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="col s12 l6">
+                        <img src="img/person4.jpg" class="materialboxed responsive-img">
+                    </div>
+                    <div class="col s12 l6">
+                      <img src="img/person3.jpg" class="materialboxed responsive-img">
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-action">
+              <a href="#" class="btn grey star"><i class="material-icons" style="vertical-align: bottom;">star</i> star</a>
+              <a href="#" class="btn green unfollow"><i class="material-icons" style="vertical-align: bottom;">remove</i> unfollow</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- END POST -->
+
+</div>
+
+  <!-- END CONTAINER -->
+<!-- TODO Footer -->
+<footer class="page-footer dev-grey-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col l6  s12">
+          <h5 class="white-text">About Us</h5>
+          <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, totam architecto tempora eaque cumque distinctio quisquam corrupti obcaecati libero voluptatem?</p>
+        </div>
+        <div class="col l6  offset-l2 s12">
+          <h5 class="white-text">Follow us</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-facebook-square"></i>  Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-twitter-square"></i>  Twitter</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-instagram"></i>  Instagram</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-linkedin"></i>  Linked In</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-github"></i>  Github</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright dev-dark-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+              <img src="img/dev_hub_logo_white.png" id="footer-logo">  Copyright 2019  &copy;
+              <div class="right">
+                <a class="grey-text text-lighten-4 modal-trigger" href="#terms">Terms & Conditions</a> | 
+                <a class="grey-text text-lighten-4 modal-trigger" href="#faqs">FAQs</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ! END Footer -->
+  <!-- TODO TERMS & CONDITIONS -->
+  <div class="modal modal-fixed-footer" id="terms">
+    <div class="modal-content">
+      <h4>Terms & <span class="dev-sky-text">Conditions</span></h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione impedit eum repudiandae doloribus praesentium incidunt,
+        id exercitationem adipisci nostrum provident iusto autem delectus tempore aliquam veniam natus at consequuntur
+        totam, vero amet quia quibusdam laboriosam, numquam mollitia. Repellat incidunt facere nobis dolores officiis,
+        nesciunt voluptatibus exercitationem libero possimus adipisci. Voluptates est maxime quasi accusantium veniam porro
+        quia doloremque sapiente fugiat aperiam, minima numquam perferendis non assumenda vero inventore delectus. Alias
+        architecto quae, debitis quia dignissimos totam, voluptatum ratione omnis officia possimus quas esse nisi dolor
+        sequi facere maiores commodi, reiciendis quasi. Eos tenetur consectetur omnis nihil. Iste at similique eaque?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione impedit eum repudiandae doloribus praesentium incidunt,
+        id exercitationem adipisci nostrum provident iusto autem delectus tempore aliquam veniam natus at consequuntur
+        totam, vero amet quia quibusdam laboriosam, numquam mollitia. Repellat incidunt facere nobis dolores officiis,
+        nesciunt voluptatibus exercitationem libero possimus adipisci. Voluptates est maxime quasi accusantium veniam porro
+        quia doloremque sapiente fugiat aperiam, minima numquam perferendis non assumenda vero inventore delectus. Alias
+        architecto quae, debitis quia dignissimos totam, voluptatum ratione omnis officia possimus quas esse nisi dolor
+        sequi facere maiores commodi, reiciendis quasi. Eos tenetur consectetur omnis nihil. Iste at similique eaque?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione impedit eum repudiandae doloribus praesentium incidunt,
+        id exercitationem adipisci nostrum provident iusto autem delectus tempore aliquam veniam natus at consequuntur
+        totam, vero amet quia quibusdam laboriosam, numquam mollitia. Repellat incidunt facere nobis dolores officiis,
+        nesciunt voluptatibus exercitationem libero possimus adipisci. Voluptates est maxime quasi accusantium veniam porro
+        quia doloremque sapiente fugiat aperiam, minima numquam perferendis non assumenda vero inventore delectus. Alias
+        architecto quae, debitis quia dignissimos totam, voluptatum ratione omnis officia possimus quas esse nisi dolor
+        sequi facere maiores commodi, reiciendis quasi. Eos tenetur consectetur omnis nihil. Iste at similique eaque?</p>
+    </div>
+    <div class="modal-footer">
+      <a class="btn modal-action modal-close waves-effect waves-light">Agree & Close</a>
+    </div>
+  </div>
+  <!-- ! END TERMS AND CONDITIONS -->
+  
+  <!-- TODO FAQS  -->
+  <div class="modal modal-fixed-footer" id="faqs">
+    <div class="modal-content">
+      <h4>FAQS</span></h4>
+      <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header dev-dark-text">
+            How do I Sign Up?
+          </div>
+          <div class="collapsible-body white black-text">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minima, maxime blanditiis facere obcaecati aspernatur at, possimus id architecto vero, magni vel. Earum ullam, nobis tenetur animi id vero, fugit sint porro dicta minus reprehenderit, fuga cupiditate! Sapiente perferendis unde blanditiis iste! Dolorum, recusandae? Voluptates non repellat omnis quo itaque?</span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header dev-dark-text">
+              How to link GitHub?
+          </div>
+          <div class="collapsible-body white black-text">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur explicabo itaque possimus sapiente optio ut voluptates fuga. Commodi delectus fuga ipsa blanditiis at, dolor beatae laborum recusandae laboriosam accusantium ullam odio facilis ratione nisi, adipisci repellat perspiciatis non nam aperiam neque quod minus molestias. </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header dev-dark-text">
+            Can I Remove a Post?
+          </div>
+          <div class="collapsible-body white black-text">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorum temporibus quaerat, adipisci iusto corporis impedit officiis quasi, accusamus quisquam eius voluptatem neque possimus. Expedita deserunt nihil repellat id voluptas vero placeat, corporis commodi voluptatibus. Incidunt, animi impedit. Ullam blanditiis reiciendis labore, voluptatum veritatis illum!</span>
+          </div>
+        </li>
+      <li>
+          <div class="collapsible-header dev-dark-text">
+            How Do I Change My Password?
+          </div>
+          <div class="collapsible-body white black-text">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorum temporibus quaerat, adipisci iusto corporis impedit officiis quasi, accusamus quisquam eius voluptatem neque possimus. Expedita deserunt nihil repellat id voluptas vero placeat, corporis commodi voluptatibus. Incidunt, animi impedit. Ullam blanditiis reiciendis labore, voluptatum veritatis illum!</span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header dev-dark-text">
+            How Do I Upload Files?
+          </div>
+          <div class="collapsible-body white black-text">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorum temporibus quaerat, adipisci iusto corporis impedit officiis quasi, accusamus quisquam eius voluptatem neque possimus. Expedita deserunt nihil repellat id voluptas vero placeat, corporis commodi voluptatibus. Incidunt, animi impedit. Ullam blanditiis reiciendis labore, voluptatum veritatis illum!</span>
+          </div>
+        </li>
+
+        <li>
+          <div class="collapsible-header dev-dark-text">
+            I forgot my password, How do I reset it? 
+          </div>
+          <div class="collapsible-body white black-text">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorum temporibus quaerat, adipisci iusto corporis impedit officiis quasi, accusamus quisquam eius voluptatem neque possimus. Expedita deserunt nihil repellat id voluptas vero placeat, corporis commodi voluptatibus. Incidunt, animi impedit. Ullam blanditiis reiciendis labore, voluptatum veritatis illum!</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <a class="btn modal-action modal-close waves-effect waves-light">Agree & Close</a>
+    </div>
+  </div>
+  <!-- ! END FAQS -->
+
+
+  <!-- TODO Preloader -->
+  <div class="loader">
+      <div>
+          <img src="img/dev_hub_logo_black.png" id="preloader-logo">
+      </div>
+      <br>
+      <div>
+          <svg version="1.1" id="L7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+          <path fill="#393e46" d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3
+          c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z">
+          <animateTransform 
+              attributeName="transform" 
+              attributeType="XML" 
+              type="rotate"
+              dur="2s" 
+              from="0 50 50"
+              to="360 50 50" 
+              repeatCount="indefinite" />
+          </path>
+          <path fill="#222831" d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7
+          c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z">
+          <animateTransform 
+              attributeName="transform" 
+              attributeType="XML" 
+              type="rotate"
+              dur="1s" 
+              from="0 50 50"
+              to="-360 50 50" 
+              repeatCount="indefinite" />
+          </path>
+          <path fill="#00adb5" d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5
+          L82,35.7z">
+          <animateTransform 
+              attributeName="transform" 
+              attributeType="XML" 
+              type="rotate"
+              dur="2s" 
+              from="0 50 50"
+              to="360 50 50" 
+              repeatCount="indefinite" />
+          </path>
+        </svg>
+      </div>
+      <p class="center">Please wait</p>
+    </div>
+  <!-- ! END Preloader -->
+
+
+  <!-- * END Nav -->
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
-    $(document).ready(function() {
-      // INIT
+      setTimeout(function() {
+        $(document).ready(function() {
+          // JS INIT
+          // Hide Preloader
+          $('.loader').fadeOut();
+          // SHOW footer
+          $('.page-footer').fadeIn();
+          // Dropdown INIT
+          $('.dropdown-button').dropdown({
+            constrainWidth: false,
+            belowOrigin: true,
+            alignment: 'left'
+          });
+          // SideNav INIT
+          $('.button-collapse').sideNav();
+          // TABS INIT
+          $('.tabs').tabs();
+          // MODALS
+          $('.modal').modal();
+          // SCROLLSPY
+          $('.scrollspy').scrollSpy();
+          // CAROUSEL
+          $('.carousel').carousel();
+          $('.carousel.carousel-slider').carousel({
+            fullWidth: true
+          });
+          // ScrollFire
+          $('.section').fadeIn();
+          const option = [
+            {
+              selector: '.section', offset: 0, callback: function (el) {
+                Materialize.fadeInImage($(el));
+              }
+            },
+            {
+              selector: '#row1', offset: 150, callback: function (el) {
+                Materialize.fadeInImage($(el));
+              }
+            },
+            {
+              selector: '#row2', offset: 200, callback: function (el) {
+                Materialize.fadeInImage($(el));
+              }
+            },
+            {
+              selector: '#row3', offset: 250, callback: function (el) {
+                Materialize.fadeInImage($(el));
+              }
+            },
+            {
+              selector: '#row4', offset: 300, callback: function (el) {
+                Materialize.fadeInImage($(el));
+              }
+            },
+            {
+              selector: '#row5', offset: 350, callback: function (el) {
+                Materialize.fadeInImage($(el));
+              }
+            },
+            {
+              selector: '#row6', offset: 400, callback: function (el) {
+                Materialize.fadeInImage($(el));
+              }
+            },
+          ];
+  
+          Materialize.scrollFire(option);
+          
+          //  TOASTS
 
-      // SideNav init
-    $('.button-collapse').sideNav();
-    
-    });
+          // SUBMIT A POST
+          $('#write-post').submit(e => {
+            e.preventDefault();
+            Materialize.toast('Post Added!', 3000, 'rounded');
+          });
+
+          // STAR
+          $('.star').on('click', function(e) {
+            e.preventDefault();
+            if(e.target.innerHTML === '<i class="material-icons" style="vertical-align: bottom;">star</i> star' ) {
+              e.target.innerHTML = `<i class="material-icons" style="vertical-align: bottom;">star</i> unstar`;
+              Materialize.toast('Post Starred', 3000, 'rounded');
+            } else {
+              e.target.innerHTML = `<i class="material-icons" style="vertical-align: bottom;">star</i> star`;
+              Materialize.toast('Post Unstarred', 3000, 'rounded');
+            }
+          });
+  
+          // FOLLOW / UNFOLLOW
+          $('.unfollow').on('click',function(e) {
+            e.preventDefault();
+            if(e.target.innerHTML === '<i class="material-icons" style="vertical-align: bottom;">remove</i> unfollow' ) {
+              e.target.innerHTML = `<i class="material-icons" style="vertical-align: bottom;">add</i> follow`;
+              Materialize.toast('Unfollowed successfully!', 3000, 'rounded');
+            } else {
+              e.target.innerHTML = `<i class="material-icons" style="vertical-align: bottom;">remove</i> unfollow`;
+              Materialize.toast('Followed user', 3000, 'rounded');
+            }
+          });
+        });
+      },3000);
     </script>
 </body>
+
 </html>

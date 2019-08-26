@@ -12,117 +12,112 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>< Dev_Hub | Profile></title>
+  <title>Dev_Hub | Profile</title>
 </head>
 <body>
   <!--? Nav -->
   <header class="main-header">
-    <nav class="dev-dark-bg">
-      <div class="container">
-        <div class="nav-wrapper">
-          <a href="home.html" class="brand-logo">
-            <img src="img/dev_hub_logo_white.png" id="logo" class="responsive-img">
-          </a>
-          <a href="#" class="button-collapse hide-on-large-only" data-activates="side-nav">
-            <i class="material-icons left">menu</i>
-          </a>
-          <ul class="right hide-on-med-and-down">
-            <li>
-              <a href="profile.html">
-                <div class="chip transparent white-text">
-                  <img src="img/profilepic.jpg"> John Doe
-                </div>
-              </a>
-            </li>
-            <li >
-              <a href="home.html">
-                <div class="chip transparent white-text">
-                    Home
-                </div>
-              </a>
-            </li>
-            <li class="active">
-              <a href="hub.html">
-                <div class="chip transparent white-text">
-                    Hub
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#!" class="dropdown-button" data-activates="my-dropdown">
-                <i class="material-icons">arrow_drop_down</i>
-              </a>
-            </li>
-          </ul>
-          <!-- SWITCH -->
-          <!-- <div class="switch">
-            <label>
-              Disable
-              <input type="checkbox">
-              <span class="lever"></span>
-              <i class="material-icons white-text">night_stay</i>
-            </label>
-          </div> -->
-          <!-- DROPDOWN MENU -->
-          <ul id="my-dropdown" class="dropdown-content dev-light-bg" style="width: 150px;">
-            <li>
-              <a href="#" style="font-size: 0.86rem;" class="dev-dark-text">
-                <i class="material-icons prefix" style="font-size: 0.8rem;">settings</i>Settings
-              </a>
-            </li>
-            <li>
-              <a href="index.html" style="font-size: 0.86rem;" class="dev-dark-text">
-                <i class="fas fa-sign-out-alt" style="font-size: 0.86rem;"></i> 
-                Log out
-              </a>
-            </li>
-          </ul>
-          <!-- SIDE NAV -->
-          <ul class="sidenav white" id="side-nav">
-            <li>
-              <div class="user-view">
-                <div class="background responsive-img"><img src="img/coverphoto.jpg">
-                </div>
-                <a href="profile.html">
-                  <img src="img/profilepic.jpg" class="circle">
+    <div class="navbar-fixed">
+      <nav class="dev-dark-bg">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="home.html" class="brand-logo">
+              <img src="img/dev_hub_logo_white.png" id="logo" class="responsive-img">
+            </a>
+            <a href="#" class="button-collapse hide-on-large-only" data-activates="side-nav">
+              <i class="material-icons left">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a href="home.html">
+                  <div class="chip transparent white-text">
+                    <img src="img/profilepic.jpg"> John Doe
+                  </div>
                 </a>
+              </li>
+              <li >
+                <a href="home.html">
+                  <div class="chip transparent white-text">
+                      Home
+                  </div>
+                </a>
+              </li>
+              <li class="active">
+                <a href="hub.html">
+                  <div class="chip transparent white-text">
+                      Hub
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="settings.html">
+                  <div class="chip transparent white-text">
+                      Settings
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="dropdown-button" data-activates="my-dropdown">
+                  <i class="material-icons">arrow_drop_down</i>
+                </a>
+              </li>
+            </ul>
+            <!-- DROPDOWN MENU -->
+            <ul id="my-dropdown" class="dropdown-content dev-light-bg" style="width: 150px;">
+              <li>
+                <a href="index.html" style="font-size: 0.86rem;" class="dev-dark-text">
+                  <i class="fas fa-sign-out-alt" style="font-size: 0.86rem;"></i> 
+                  Log out
+                </a>
+              </li>
+            </ul>
+            <!-- SIDE NAV -->
+            <ul class="sidenav white" id="side-nav">
+              <li>
+                <div class="user-view">
+                  <div class="background responsive-img"><img src="img/coverphoto.jpg">
+                  </div>
+                  <a href="home.html">
+                    <img src="img/profilepic.jpg" class="circle">
+                  </a>
 
-                <a href="profile.html">
-                  <span class="name white-text">John Doe</span>
+                  <a href="home.html">
+                    <span class="name white-text">John Doe</span>
+                  </a>
+                  <a href="#">
+                    <span class="email white-text">johndoe@gmail.com</span>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <a href="home.html" class="dev-dark-text">
+                  <i class="material-icons dev-grey-text">home</i> Home
                 </a>
-                <a href="#">
-                  <span class="email white-text">johndoe@gmail.com</span>
+              </li>
+              <li>
+                <a href="hub.html" class="dev-dark-text">
+                  <i class="material-icons dev-grey-text">device_hub</i>
+                  Hub
                 </a>
-              </div>
-            </li>
-            <li>
-              <a href="home.html" class="dev-dark-text">
-                <i class="material-icons dev-grey-text">home</i> Home
-              </a>
-            </li>
-            <li>
-              <a href="hub.html" class="dev-dark-text">
-                <i class="material-icons dev-grey-text">device_hub</i>
-                Hub
-              </a>
-            </li>
-            <li>
-              <a href="settings.html" class="dev-dark-text">
-                <i class="material-icons dev-grey-text">settings</i>
-                Settings
-              </a>
-            </li>
-            <li class="subheader"> <a class="divider"></a></li>
-            <li>
-              <a href="#" class="dev-dark-text">
-                <i class="fas fa-sign-out-alt dev-grey-text" style="font-size: 1.5em;"></i> 
-                Log out
-              </a>
-            </li>
-          </ul>
+              </li>
+              <li>
+                <a href="settings.html" class="dev-dark-text">
+                  <i class="material-icons dev-grey-text">settings</i>
+                  Settings
+                </a>
+              </li>
+              <li class="subheader"> <a class="divider"></a></li>
+              <li>
+                <a href="#" class="dev-dark-text">
+                  <i class="fas fa-sign-out-alt dev-grey-text" style="font-size: 1.5em;"></i> 
+                  Log out
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
   <!-- END Nav -->
 
@@ -290,7 +285,7 @@
                     </div>
                   </div>
                   <div class="col s2 offset-m1 m3 offset-l1 l2">
-                    <a href="#!" class="btn follow dev-grey-text grey lighten-2 secondary-content">
+                    <a href="#!" class="btn unfollow dev-grey-text grey lighten-2 secondary-content">
                       <i class="material-icons" style="font-size: 0.9rem">add</i>
                     </a>
                   </div>
@@ -305,7 +300,7 @@
                     </div>
                   </div>
                   <div class="col s2 offset-m1 m3 offset-l1 l2">
-                    <a href="#!" class="btn follow dev-grey-text grey lighten-2 secondary-content">
+                    <a href="#!" class="btn unfollow dev-grey-text grey lighten-2 secondary-content">
                       <i class="material-icons" style="font-size: 0.9rem">add</i>
                     </a>
                   </div>
@@ -319,7 +314,7 @@
                     </div>
                   </div>
                   <div class="col s2 offset-m1 m3 offset-l1 l2">
-                    <a href="#!" class="btn follow dev-grey-text grey lighten-2 secondary-content">
+                    <a href="#!" class="btn unfollow dev-grey-text grey lighten-2 secondary-content">
                       <i class="material-icons" style="font-size: 0.9rem">add</i>
                     </a>
                   </div>
@@ -334,7 +329,7 @@
                     </div>
                   </div>
                   <div class="col s2 offset-m1 m3 offset-l1 l2">
-                    <a href="#!" class="btn follow dev-grey-text grey lighten-2 secondary-content">
+                    <a href="#!" class="btn unfollow dev-grey-text grey lighten-2 secondary-content">
                       <i class="material-icons" style="font-size: 0.9rem">add</i>
                     </a>
                   </div>
@@ -349,7 +344,7 @@
                     </div>
                   </div>
                   <div class="col s2 offset-m1 m3 offset-l1 l2">
-                    <a href="#!" class="btn follow dev-grey-text grey lighten-2 secondary-content">
+                    <a href="#!" class="btn unfollow dev-grey-text grey lighten-2 secondary-content">
                       <i class="material-icons" style="font-size: 0.9rem">add</i>
                     </a>
                   </div>
@@ -375,7 +370,7 @@
                     </div>
                   </div>
                   <div class="col s2 offset-m1 m3 offset-l1 l2">
-                    <a href="#!" class="btn follow dev-grey-text grey lighten-2 secondary-content">
+                    <a href="#!" class="btn unfollow dev-grey-text grey lighten-2 secondary-content">
                       <i class="material-icons" style="font-size: 0.9rem">remove</i>
                     </a>
                   </div>
@@ -390,7 +385,7 @@
                     </div>
                   </div>
                   <div class="col s2 offset-m1 m3 offset-l1 l2">
-                    <a href="#!" class="btn follow dev-grey-text grey lighten-2 secondary-content">
+                    <a href="#!" class="btn unfollow dev-grey-text grey lighten-2 secondary-content">
                       <i class="material-icons" style="font-size: 0.9rem">remove</i>
                     </a>
                   </div>
@@ -405,7 +400,7 @@
                     </div>
                   </div>
                   <div class="col s2 offset-m1 m3 offset-l1 l2">
-                    <a href="#!" class="btn follow dev-grey-text grey lighten-2 secondary-content">
+                    <a href="#!" class="btn unfollow dev-grey-text grey lighten-2 secondary-content">
                       <i class="material-icons" style="font-size: 0.9rem">remove</i>
                     </a>
                   </div>
@@ -420,7 +415,7 @@
                     </div>
                   </div>
                   <div class="col s2 offset-m1 m3 offset-l1 l2">
-                    <a href="#!" class="btn follow dev-grey-text grey lighten-2 secondary-content">
+                    <a href="#!" class="btn unfollow dev-grey-text grey lighten-2 secondary-content">
                       <i class="material-icons" style="font-size: 0.9rem">remove</i>
                     </a>
                   </div>
@@ -435,7 +430,7 @@
                     </div>
                   </div>
                   <div class="col s2 offset-m1 m3 offset-l1 l2">
-                    <a href="#!" class="btn follow dev-grey-text grey lighten-2 secondary-content">
+                    <a href="#!" class="btn unfollow dev-grey-text grey lighten-2 secondary-content">
                       <i class="material-icons" style="font-size: 0.9rem">remove</i>
                     </a>
                   </div>
@@ -447,7 +442,8 @@
           <!-- ! END FOLLOWING -->
         </div>
         <!-- TODO SCROLLSPY -->
-        <div class="col hide-on-small-only m3 l2">
+        <br><br><br>
+        <div class="col hide-on-small-only m3 l2" >
           <ul class="pinned table-of-contents">
             <li>
               <a href="#repositories" class="active black-text">Repositories</a>
@@ -648,10 +644,16 @@
     <p class="center">Please wait</p>
   </div>
   <!-- ! END Preloader -->
+  
+  <!-- TODO NIGHT MODE  -->
+
+  <!-- ! -->
+  
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
+  <!-- <script type="text/javascript" src="js/nightmode.js"></script> -->
   <script>
     setTimeout(function() {
       $(document).ready(function() {
@@ -707,32 +709,32 @@
 
         Materialize.scrollFire(option);
         
-        // Add Follower
-        $('#todo-form').submit(e => {
+        // STAR / UNSTAR
+        $('.star').on('mousedown',function(e) {
           e.preventDefault();
-          const output = `
-            <li class="collection-item"> 
-              <div>
-                ${$('#todo').val()}
-                <a href="#!" class="secondary-content delete">
-                  <i class="material-icons">close</i>
-                </a>
-              </div>
-            </li>
-          `;
-          $('.todos').append(output);
-
-          Materialize.toast('Todo added', 3000, 'rounded');
+          if(e.target.innerHTML === `<i class="material-icons style="font-size: 0.9rem">star</i>`) {
+            e.target.innerHTML = `<i class="material-icons" style="font-size: 0.9rem">star</i>`;
+            Materialize.toast('Repository unstarred!', 3000, 'rounded');
+          } else {
+            e.target.innerHTML = `<i class="material-icons star" style="font-size: 0.9rem">star</i>`;
+            Materialize.toast('Repository starred', 3000, 'rounded');
+          }
+        });
+  
+        // FOLLOW / UNFOLLOW
+        $('.unfollow').on('click',function(e) {
+          e.preventDefault();
+          if(e.target.innerHTML === '<i class="material-icons" style="vertical-align: bottom;">add</i>' ) {
+            e.target.innerHTML = `<i class="material-icons" style="vertical-align: bottom;">remove</i>`;
+            Materialize.toast('Unfollowed successfully!', 3000, 'rounded');
+          } else {
+            e.target.innerHTML = `<i class="material-icons" style="vertical-align: bottom;">add</i>`;
+            Materialize.toast('Followed user', 3000, 'rounded');
+          }
         });
 
-        // Unfollow
-        $('.todos').on('click', '.delete', e => {
-          
-          $(this).parent().parent().remove();
-
-          Materialize.toast('Todo removed', 3000, 'rounded');
-          e.preventDefault();
-        });
+        //  NIGHT MODE 
+        $()
       });
     },1000);
   </script>
